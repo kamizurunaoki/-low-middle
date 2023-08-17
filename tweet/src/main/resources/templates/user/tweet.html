@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>投稿</title>
+  <link rel="stylesheet" type="text/css" href="/css/tweet.css">
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <button class="back-button" onclick="window.history.back()">戻る</button>
+      つぶやこう！
+    </h1>
+
+    <form action="/posts" method="post">
+      <div class="tweet-box">
+        <textarea name="content" placeholder="いまどうしてる？"></textarea>
+      </div>
+
+      <!-- userIdを入力するフィールド -->
+      <input type="hidden" name="userId" value="1"> <!-- ユーザーIDを適切な値に変更 -->
+
+      <button class="tweet-button" type="submit">ツイート</button>
+    </form>
+  </div>
+</body>
+</html>
